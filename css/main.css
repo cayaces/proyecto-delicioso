@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2? family=Karla:ital,wght@0,200;1,200;1,800&family=Sofia+Sans+Extra+Condensed:wght@1&family=Source+Code+Pro:ital,wght@1,300;1,400&family=Teko:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aquamarine;
+    font-family: 'Teko', sans-serif;
+}
+
+/*  MENU */
+
+.barra--menu {
+    padding: 20px 40px;
+    background-color: #f5c6f5b6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.barra {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+.barra li {
+    list-style-type: none;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    text-decoration: none;
+}
+
+nav .barra li a {
+    text-decoration: none;
+    color: rgb(78, 78, 48);
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo h1 {
+    color: rgb(255, 255, 255);
+    background-color: rgba(128, 128, 128, 0.274);
+    padding: 20px;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.textoPrincipal {
+    color: #a281a7;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 20px;
+    font-family: fantasy;
+    text-align: center;
+    line-height: 2;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.titulo2 h2 {
+    color: rgb(255, 255, 255);
+    background-color: rgba(128, 128, 128, 0.274);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+/* TARJETAS DE PRODUCTOS */
+
+.tarjetas {
+    padding: 40px;
+    display: flex;
+    gap: 40px;
+
+}
+
+.card-producto .translate {
+    background-color: #f0ffffa8;
+    border-radius: 16px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    transition: 2s;
+}
+
+.translate :hover {
+    transform: translate(0, -25px);
+}
+
+.card-img {
+    width: 100%;
+}
+
+.card-titulo {
+    color: rgb(255, 255, 255);
+    background-color: rgba(128, 128, 128, 0.274);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.menu {
+    width: 900px;
+    margin: 0% auto;
+}
+
+img {
+    width: 100px;
+    padding: 10px;
+}
+
+/*PAGINA INDEX*/
+
+.container {
+    background-size: cover;
+    width: 60%;
+    padding: 50px;
+
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    padding: 20px;
+    background-color: hsla(315, 86%, 51%, 0.664);
+    background-size: cover;
+    width: 100%;
+    border-radius: 16px;
+    position: relative;
+
+    border: 2px solid hwb(315 9% 7% / 0.24);
+    align-items: end;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.card__imagen {
+    width: 100%;
+}
+
+.seccionPrincipal h1 {
+    color: #ffffff;
+    background-color: #808080;
+    padding: 60px;
+    border-radius: 30px;
+}
+
+.pieDePagina {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5c6f5b6;
+
+}
+
+.pieDePagina .pie {
+    text-decoration: none;
+    color: rgb(78, 78, 48);
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+
+    .card-producto .translate {
+        flex-direction: column;
+    }
+
+    .tarjetas {
+        flex-direction: column;
+    }
+
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .card-producto .translate {
+        flex-direction: column;
+    }
+
+    .tarjetas {
+        flex-direction: column;
+    }
+
+
+}
+
+    
+
+
